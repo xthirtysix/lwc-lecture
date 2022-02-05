@@ -1,8 +1,8 @@
-import { LightningElement } from 'lwc';
+import {LightningElement} from 'lwc';
 
 const STEPS = [
-  { id: 1, value: 1, label: 'First' },
-  { id: 2, value: 2, label: 'Second' }
+  {id: 1, value: 1, label: 'First'},
+  {id: 2, value: 2, label: 'Second'}
 ];
 
 export default class BasicsNavigation extends LightningElement {
