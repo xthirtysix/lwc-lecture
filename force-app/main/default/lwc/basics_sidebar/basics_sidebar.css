@@ -1,0 +1,7 @@
+@import 'c/shared_cssLibrary';
+
+:host {
+  display: block;
+  min-height: var(--basics-area-min-height);
+  background-color: var(--basics-block-background-color);
+}
