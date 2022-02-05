@@ -1,6 +1,7 @@
 :host {
   --basics-block-padding: 0.75rem;
   --basics-block-background-color: #fff;
+  --basics-area-min-height: 70vh;
 }
 
 .basics__card {
