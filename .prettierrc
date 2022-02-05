@@ -1,5 +1,6 @@
 {
   "trailingComma": "none",
+  "singleQuotes": true,
   "overrides": [
     {
       "files": "**/lwc/**/*.html",
