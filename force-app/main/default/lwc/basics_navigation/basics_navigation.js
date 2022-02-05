@@ -8,20 +8,20 @@ const STEPS = [
 export default class BasicsNavigation extends LightningElement {
   chosenStepIndex = 0;
 
-  // срабатывает при подключении компонента, и до рендеринга
-  connectedCallback() {
-    // добавляет стиль из дизайн-системы slds
-    this.classList.add("slds-page-header");
-    // добавляет атрибут
-    this.setAttribute("role", "region");
-  }
-
   get steps() {
     return STEPS;
   }
 
   get currentStep() {
     return this.steps[this.chosenStepIndex].value;
+  }
+
+  // срабатывает при подключении компонента, и до рендеринга
+  connectedCallback() {
+    // добавляет стиль из дизайн-системы slds
+    this.classList.add("slds-page-header");
+    // добавляет атрибут
+    this.setAttribute("role", "region");
   }
 
   handleStepFocus(event) {
