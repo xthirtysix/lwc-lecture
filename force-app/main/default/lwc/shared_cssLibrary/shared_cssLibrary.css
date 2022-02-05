@@ -1,0 +1,12 @@
+:host {
+  --basics-block-padding: 0.75rem;
+  --basics-block-background-color: #fff;
+}
+
+.basics__card {
+  padding: var(--basics-card-padding, var(--basics-block-padding));
+  background-color: var(
+    --basics-card-background-color,
+    var(--basics-block-background-color)
+  );
+}
