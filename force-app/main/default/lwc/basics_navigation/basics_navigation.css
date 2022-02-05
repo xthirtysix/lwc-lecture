@@ -1,0 +1,6 @@
+@import "c/shared_cssLibrary";
+
+:host {
+  display: block;
+  background-color: var(--basics-block-background-color);
+}
