@@ -1,4 +1,4 @@
-@import "c/shared_cssLibrary";
+@import 'c/shared_cssLibrary';
 
 :host {
   display: block;
