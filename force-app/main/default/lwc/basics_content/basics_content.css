@@ -4,10 +4,10 @@
   display: grid;
   grid-template-columns: 1fr 4.5fr;
   grid-gap: 1rem;
-  padding: 0;
 }
 
 :host > * {
-  background-color: var(--basics-block-background-color);
+  display: block;
   min-height: var(--basics-area-min-height);
+  background-color: var(--basics-block-background-color);
 }
