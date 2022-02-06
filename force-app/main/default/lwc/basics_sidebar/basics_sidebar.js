@@ -33,7 +33,7 @@ export default class BasicsSidebar extends LightningElement {
 
   handleMessage(message) {
     this.navigationItems = message
-    this.selectedItem = message[0]?.name
+    this.selectedItem = message[0]?.value
   }
 
   subscribeToMessageChannel() {
