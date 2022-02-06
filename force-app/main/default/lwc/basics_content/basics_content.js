@@ -19,7 +19,6 @@ export default class BasicsContent extends LightningElement {
   }
 
   connectedCallback() {
-    this.classList.add('slds-page-header')
     this.subscribeToMessageChannel()
   }
 

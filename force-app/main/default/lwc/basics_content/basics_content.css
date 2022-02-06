@@ -1,6 +1,12 @@
 @import 'c/shared_cssLibrary';
 
 :host {
+  display: grid;
+  grid-template-columns: 1fr 4.5fr;
+  grid-gap: 1rem;
+}
+
+:host > * {
   display: block;
   min-height: var(--basics-area-min-height);
   background-color: var(--basics-block-background-color);
