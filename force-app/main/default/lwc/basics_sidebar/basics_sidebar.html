@@ -1,3 +1,16 @@
 <template>
-  <h2>Content placeholder</h2>
+  <lightning-vertical-navigation
+    onselect={handleItemSelect}
+    selected-item={selectedItem}
+  >
+    <lightning-vertical-navigation-section label={sectionName}>
+      <template for:each={items} for:item="item">
+        <lightning-vertical-navigation-item
+          key={item.id}
+          label={item.label}
+          name={item.name}
+        ></lightning-vertical-navigation-item>
+      </template>
+    </lightning-vertical-navigation-section>
+  </lightning-vertical-navigation>
 </template>
