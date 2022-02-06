@@ -7,7 +7,7 @@ import {
 } from 'lightning/messageService'
 import NAVIGATION_CHANNEL from '@salesforce/messageChannel/basicsNavigation__c'
 
-export default class BasicsSidebar extends LightningElement {
+export default class BasicsContent extends LightningElement {
   navigationItems = []
   selectedItem = undefined
   subscription = undefined
@@ -19,7 +19,6 @@ export default class BasicsSidebar extends LightningElement {
   }
 
   connectedCallback() {
-    this.classList.add('slds-page-header')
     this.subscribeToMessageChannel()
   }
 
@@ -51,5 +50,4 @@ export default class BasicsSidebar extends LightningElement {
     unsubscribe(this.subscription);
     this.subscription = null;
   }
-
 }
