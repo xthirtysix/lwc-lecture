@@ -7,7 +7,7 @@ import {
 } from 'lightning/messageService'
 import NAVIGATION_CHANNEL from '@salesforce/messageChannel/basicsNavigation__c'
 
-export default class BasicsSidebar extends LightningElement {
+export default class BasicsContent extends LightningElement {
   navigationItems = []
   selectedItem = undefined
   subscription = undefined
